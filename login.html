@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <meta name="theme-color" content="#25AAE1" />
+
+  <link rel="icon" type="image/png" href="img/icon/logo.png" />
+
+  <title>FUN88官方网站</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript" src="js/config.js"></script>
+</head>
+
+<body>
+  <section id="login" class="pt-0">
+    <div class="container mt-3">
+      <div class="col-12">
+        <span class="row menu-back">
+          <i class="back"></i>
+          <small class="text">Back</small>
+        </span>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="content">
+        <img class="full-width mb-3" src="img/icon/logo2.png" alt="">
+        <form class="col-12" method="POST">
+          <div class="form-group">
+            <div class="inline-flex">
+              <label for="email" class="mb-0 f-2">
+                <i class="fas fa-envelope"></i>
+              </label>
+              <input type="email" id="email" class="form-control no-shadow pl-3 f-2" placeholder="email@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="inline-flex">
+              <label for="pass" class="mb-0 f-2">
+                <i class="fas fa-key"></i>
+              </label>
+              <input type="password" id="pass" class="form-control no-shadow pl-3 f-2" placeholder="Password" required>
+              <small id="forgotpass" class="form-text f-5">
+                <a href="forgot.html" class="text-muted">Forgot Password</a>
+              </small>
+            </div>
+          </div>
+          <div class="form-group form-check f-5">
+            <div class="inline-flex">
+              <input type="checkbox" class="form-check-input" id="check">
+              <label class="form-check-label" for="check">Keep me logged in</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger col f-1">LOGIN</button>
+          <div class="form-group">
+            <small id="signup" class="form-text mt-2 f-5">
+              Don't have an account?&nbsp;<a href="register.html" class="bold">SIGN UP</a>
+            </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/functions.js"></script>
+  <!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

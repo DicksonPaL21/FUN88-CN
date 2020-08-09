@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <meta name="theme-color" content="#25AAE1" />
+
+  <link rel="icon" type="image/png" href="img/icon/logo.png" />
+
+  <title>FUN88官方网站</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript" src="js/component/text/global.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script src="https://kit.fontawesome.com/a8c2f6ec30.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="app-name">FUN88</span>
+        </a>
+        <div id="sidebar-menu">
+          <i class="open-sidebar" title="Open"></i>
+          <script src="js/component/sidenav.js"></script>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hidedu" style="background: black;">
+    <img src="img/esport/Lobby_ESportsPromo.jpg" class="img-fluid" />
+    <ul class="nav nav-tabs esport" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link esport active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <img src="img/esport/allgame_icon_active.png" alt="" /><span>Games Lobby</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link esport" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <img src="img/esport/result_icon.png" alt="" /><span>Result</span>
+        </a>
+      </li>
+      <li class="nav-item f-button">
+        <a href="#" class="nav-link"><img src="img/esport/header_team_icon.png" alt="" /> Clan</a>
+        <div class="dropdown-content">
+          <a href="https://www.esportstatspro.com/zh-CN/lol/Team?gg=0"><img src="img/esport/home_lol_cn.png" width="20" height="20" />League of Legends
+          </a>
+          <a href="https://www.esportstatspro.com/zh-CN/dota2/Team?gg=0"><img src="img/esport/leftbar_dota2_cn.png" width="20" height="20" />Dota 2</a>
+        </div>
+      </li>
+      <li class="nav-item f-button" onclick="hide()">
+        <a href="#" class="nav-link"><img src="img/esport/header_condition_icon.png" alt="" /> Gaming
+          Rules</a>
+      </li>
+      <li class="nav-item f-button" onclick="showannouncement()">
+        <a href="#" class="nav-link"><img src="img/esport/anoucemt_button_icon.png" alt="" />
+          announcement</a>
+      </li>
+      <li class="nav-item a-button mx-5 my-4">
+        <a href="#" class="nav-link a-b"> European odds </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <i class="fas fa-bars menu-game-list toggle-btn" onclick="toggleSidebar()" aria-hidden="true"></i>
+        <div class="overlay" id="overlay" onclick="off()" style="display: none;"></div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="game-list mt-0">
+              <div class="game-logo">
+                <img src="img\esport\home_dota2_cn.png" alt="" />
+                <div class="game-info">
+                  <div class="game-title">
+                    <span>In preparation for the third inning</span>
+                  </div>
+                  <p class="other-info">12:30 <span>BO3</span></p>
+                </div>
+              </div>
+              <div class="team-match px-3">
+                <p class="team-name">Albatross Club</p>
+                <div class="team-home">
+                  <img src="img/esport/match-logo1.png" class="game-match-logo" />
+                  <span>1.821</span>
+                </div>
+                <div class="count-down">
+                  <p>The game has not started</p>
+                  <div class="count-num">9</div>
+                  <div class="count-num">&nbsp;</div>
+                  <div class="count-num">1</div>
+                  <div class="count-num px-1">:</div>
+                  <div class="count-num">0</div>
+                  <div class="count-num">&nbsp;</div>
+                  <div class="count-num">7</div>
+                  <div class="count-num">&nbsp;</div>
+                </div>
+                <div class="team-home">
+                  <img src="img/esport/match-logo1.png" class="game-match-logo" />
+                  <span>1.821</span>
+                </div>
+                <p class="team-name">Albatross Club</p>
+              </div>
+              <div class="tourna-info px-5 py-2">
+                <div class="btn btn-light btn-tourna p-2">
+                  <img src="img/esport/btn-img.png" width="16" height="18" />
+                  Team data
+                </div>
+                <img src="img/esport/tourna1.png" class="tourna-logo p-2" />
+                <div class="btn-status p-2">
+                  <p>+16<br><span>handicap</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="game-list" style="background:#2a3049;">
+              <div class="game-logo">
+                <img src="img\esport\home_lol_cn.png" alt="" />
+                <div class="game-info">
+                  <div class="game-title">
+                    <span>In preparation for the third inning</span>
+                  </div>
+                  <p class="other-info">12:30 <span>BO3</span></p>
+                </div>
+              </div>
+              <div class="team-match px-3">
+                <p class="team-name">Brion Blade</p>
+                <div class="team-home">
+                  <img src="img/esport/match-logo1.png" class="game-match-logo" />
+                  <span>1.821</span>
+                </div>
+                <div class="count-down">
+                  <p>The game has not started</p>
+                  <div class="count-num">1</div>
+                  <div class="count-num">&nbsp;</div>
+                  <div class="count-num">1</div>
+                  <div class="count-num px-1">:</div>
+                  <div class="count-num">6</div>
+                  <div class="count-num">&nbsp;</div>
+                  <div class="count-num">3</div>
+                  <div class="count-num">&nbsp;</div>
+                </div>
+                <div class="team-home">
+                  <img src="img/esport/match-logo1.png" class="game-match-logo" />
+                  <span>1.821</span>
+                </div>
+                <p class="team-name">Team Dynamics</p>
+              </div>
+              <div class="tourna-info px-5 py-2">
+                <div class="btn btn-light btn-tourna p-2">
+                  <img src="img/esport/btn-img.png" width="16" height="18" />
+                  Team data
+                </div>
+                <img src="img/esport/1624bf3a-1c0c-4d9e-8d9f-7a7694990ebf.png" class="tourna-logo p-2" />
+                <div class="btn-status p-2" style="background:#4759ad !important;">
+                  <p>+80<br><span>markets</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="game-list" style="background:#2b2b38;">
+              <div class="game-logo">
+                <img src="img\esport\home_csgo_cn.png" alt="" />
+                <div class="game-info">
+                  <div class="game-title">
+                    <span>In preparation for the third inning</span>
+                  </div>
+                  <p class="other-info">12:30 <span>BO3</span></p>
+                </div>
+              </div>
+              <div class="team-match px-3">
+                <p class="team-name">Brion Blade</p>
+                <div class="team-home">
+                  <img src="img/esport/match-logo1.png" class="game-match-logo" />
+                  <span>1.821</span>
+                </div>
+                <div class="count-down">
+                  <p>The game has not started</p>
+                  <div class="count-num">1</div>
+                  <div class="count-num">&nbsp;</div>
+                  <div class="count-num">1</div>
+                  <div class="count-num px-1">:</div>
+                  <div class="count-num">6</div>
+                  <div class="count-num">&nbsp;</div>
+                  <div class="count-num">3</div>
+                  <div class="count-num">&nbsp;</div>
+                </div>
+                <div class="team-home">
+                  <img src="img/esport/match-logo1.png" class="game-match-logo" />
+                  <span>1.821</span>
+                </div>
+                <p class="team-name">Team Dynamics</p>
+              </div>
+              <div class="tourna-info px-5 py-2">
+                <div class="btn btn-light btn-tourna p-2">
+                  <img src="img/esport/btn-img.png" width="16" height="18" />
+                  Team data
+                </div>
+                <img src="img/esport/1624bf3a-1c0c-4d9e-8d9f-7a7694990ebf.png" class="tourna-logo p-2" />
+                <div class="btn-status p-2">
+                  <p>+80<br><span>markets</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            2
+          </div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            ...
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            ...
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="select">
+          <div class="container-fluid">
+            <div class="row">
+              <i class="fas fa-bars menu-game-list toggle-btn" onclick="toggleSidebar()" aria-hidden="true"></i>
+              <div class="overlay" id="overlay" onclick="off()"></div>
+              <select class="select-game-list my-2 mx-2" name="slt-1" id="slt-1">
+                <option value="1">All leagues</option>
+                <option value="2">ESEA MDL Season 33 North America</option>
+                <option value="3">Movistar Liga Pro Game Season 3-Group A</option>
+                <option value="4">2020 Top League Spring</option>
+                <option value="5">2020 LVP Super League Spring</option>
+                <option value="">EBL Season 6</option>
+                <option value="">Gamers Club Liga Profissional: February 2020</option>
+                <option value="">2020 PG International Spring</option>
+                <option value="">ESEA Season 33: Senior Division-Europe</option>
+                <option value="">OGA Counter PIT Season 7</option>
+                <option value="">LCL 2020 Spring Open</option>
+                <option value="">Riga Season 13</option>
+                <option value="">WESG Russia: Closed Qualifier</option>
+                <option value="">Baltic Masters Season 4</option>
+                <option value="">ESEA MDL S33 Europe</option>
+                <option value="">We play! Dota 2 Tug of War: Crazy Moon-Playoffs</option>
+                <option value="">Turkish Academy Winter 2020</option>
+                <option value="">Winter Conference 2020</option>
+                <option value="">PM League Season 2</option>
+                <option value="">We play! Dota 2 Tug of War: Crazy Moon-Group B</option>
+                <option value="">Epic Challenger League Season 1</option>
+                <option value="">Asian Challenger League Season 6</option>
+                <option value="">We play! Dota 2 Tug of War: Mad Moon-Group Stage A</option>
+                <option value="">ESEA Open 33 Asia Pacific</option>
+                <option value="">2020 LCK Spring</option>
+                <option value="">ESEA S33 Australia</option>
+                <option value="">Hainan Spring Masters Invitational-China Qualifier</option>
+                <option value="">Huya CSGO Pro League Season 1</option>
+                <option value="">Korean Challenger League Spring 2020</option>
+                <option value="">Red Star Cup season 3</option>
+                <option value="">Brasileirao season 2</option>
+                <option value="">La Liga-2020 United League</option>
+                <option value="">UKLC 2020 Spring</option>
+                <option value="">LFL 2020 Spring</option>
+                <option value="">Ultraliga S3</option>
+                <option value="">Baltic Masters Season 4</option>
+                <option value="">StarLadder ImbaTV Dota 2 Season 3 China Qualifiers</option>
+                <option value="">Professional Video Game Alliance-Unity Alliance
+                  Process-Opening</option>
+                <option value="">2020 LPLOL Spring</option>
+                <option value="">Movistar Liga Pro Game Season 3-Group B</option>
+                <option value="">2020 Dutch Professional League Spring</option>
+                <option value="">CBDota 2</option>
+                <option value="">2020 LCS Spring</option>
+                <option value="">Weak League Season 2</option>
+                <option value="">2020 North American Secondary League Spring</option>
+                <option value="">Nordic Championship Spring 2020</option>
+                <option value="">Riga 99 Season 14: Division 1-League</option>
+                <option value="">FLASHPOINT Season 1 European Closed Qualifier
+                </option>
+                <option value="">Audi tv 2020</option>
+                <option value="">Alpha X Champions Cup</option>
+                <option value="">ESL Los Angeles Chinese Qualifiers-Playoffs</option>
+                <option value="">LLA 2020 Open</option>
+                <option value="">OWL 2020</option>
+                <option value="">Master of Life Season 13</option>
+                <option value="">FLASHPOINT Season 1 North American Closed Qualifier</option>
+                <option value="">Rocket League Championship Series Season 9-Europe</option>
+                <option value="">BLAST Premier: Spring 2020 regular season</option>
+                <option value="">FLASHPOINT Season 1 South American Closed Qualifier</option>
+                <option value="">Six Invitational 2020-Playoffs</option>
+                <option value="">WardiTV Team Liquid Map Contest Match 6</option>
+                <option value="">TCL 2020 winter</option>
+                <option value="">2020 VCS Spring</option>
+                <option value="">LouvardGame 5.1-Legend Stage-Playoffs</option>
+                <option value="">ESL Los Angeles China Qualifier</option>
+                <option value="">Preseason Super Championship</option>
+                <option value="">Rocket League Championship Series Season 9-North
+                  America</option>
+                <option value="">2020 LEC Spring</option>
+                <option value="">CIS Minor Championship-Rio 2020: Open Qualifier # 4</option>
+                <option value="">Baltic Esports League season 5</option>
+                <option value="">2020 La Liga Portuguese Spring</option>
+                <option value="">EDISION 19/20 playoffs</option>
+                <option value="">LJL 2020 Spring</option>
+                <option value="">OPL 2020 Phase I</option>
+              </select>
+              <select class="select-game-list my-2" name="slt-1" id="slt-1">
+                <option value="1">Last seven days</option>
+                <option value="2">2020-02-20</option>
+                <option value="3">2020-02-19</option>
+                <option value="4">2020-02-18</option>
+                <option value="5">2020-02-17</option>
+                <option value="">2020-02-16</option>
+                <option value="">2020-02-15</option>
+                <option value="">2020-02-14</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid game-list mt-0 p-0">
+          <div class="row no-gutters" style="height:65px;">
+            <div class="col-6">
+              <div class="game-logo">
+                <img src="img\esport\home_dota2_cn.png" alt="" />
+                <div class="game-info">
+                  <h5 class="info-date">20 02</h5>
+                  <p class="info-time">12:30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 mt-2 text-right">
+                <img src="img/esport/tourna-logo1.png" width="50" height="auto" />
+                <div class="btn btn-danger match-detail" style="background:#DB2F25 !important;">
+                  Expand
+                  <i class="fas fa-plus-circle pl-2" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-12 p-0">
+              <div class="team-match px-2" style="justify-content:center">
+                <p class="team-name">Albatross Club</p>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game1.png" class="game-match-logo" />
+                </div>
+                <div class="row">
+                  <p class="score-team blue">1</p>
+                  <p class="score-team">:</p>
+                  <p class="score-team gray">2</p>
+                </div>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game2.png" class="game-match-logo" />
+                </div>
+                <p class="team-name">Albatross Club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid game-list mt-0 p-0" style="background:#2A3049;">
+          <div class="row no-gutters" style="height:65px;">
+            <div class="col-6">
+              <div class="game-logo">
+                <img src="img\esport\home_lol_cn.png" alt="" />
+                <div class="game-info">
+                  <h5 class="info-date">20 02</h5>
+                  <p class="info-time">12:30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 mt-2 text-right">
+                <img src="img/esport/tourna-logo1.png" width="50" height="auto" />
+                <div class="btn btn-danger match-detail" style="background:#DB2F25 !important;">
+                  Expand
+                  <i class="fas fa-plus-circle pl-2" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-12 p-0">
+              <div class="team-match px-2" style="justify-content:center">
+                <p class="team-name">Albatross Club</p>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game1.png" class="game-match-logo" />
+                </div>
+                <div class="row">
+                  <p class="score-team blue">1</p>
+                  <p class="score-team">:</p>
+                  <p class="score-team gray">2</p>
+                </div>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game2.png" class="game-match-logo" />
+                </div>
+                <p class="team-name">Albatross Club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid game-list mt-0 p-0" style="background:#2B2B38;">
+          <div class="row no-gutters" style="height:65px;">
+            <div class="col-6">
+              <div class="game-logo">
+                <img src="img\esport\home_csgo_cn.png" alt="" />
+                <div class="game-info">
+                  <h5 class="info-date">20 02</h5>
+                  <p class="info-time">12:30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 mt-2 text-right">
+                <img src="img/esport/tourna-logo1.png" width="50" height="auto" />
+                <div class="btn btn-danger match-detail" style="background:#DB2F25 !important;">
+                  Expand
+                  <i class="fas fa-plus-circle pl-2" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-12 p-0">
+              <div class="team-match px-2" style="justify-content:center">
+                <p class="team-name">Albatross Club</p>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game1.png" class="game-match-logo" />
+                </div>
+                <div class="row">
+                  <p class="score-team blue">1</p>
+                  <p class="score-team">:</p>
+                  <p class="score-team gray">2</p>
+                </div>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game2.png" class="game-match-logo" />
+                </div>
+                <p class="team-name">Albatross Club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid game-list mt-0 p-0">
+          <div class="row no-gutters" style="height:65px;">
+            <div class="col-6">
+              <div class="game-logo">
+                <img src="img\esport\home_dota2_cn.png" alt="" />
+                <div class="game-info">
+                  <h5 class="info-date">20 02</h5>
+                  <p class="info-time">12:30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 mt-2 text-right">
+                <img src="img/esport/tourna-logo1.png" width="50" height="auto" />
+                <div class="btn btn-danger match-detail" style="background:#DB2F25 !important;">
+                  Expand
+                  <i class="fas fa-plus-circle pl-2" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-12 p-0">
+              <div class="team-match px-2" style="justify-content:center">
+                <p class="team-name">Albatross Club</p>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game1.png" class="game-match-logo" />
+                </div>
+                <div class="row">
+                  <p class="score-team blue">1</p>
+                  <p class="score-team">:</p>
+                  <p class="score-team gray">2</p>
+                </div>
+                <div class="team-home px-4">
+                  <img src="img/esport/logo-game2.png" class="game-match-logo" />
+                </div>
+                <p class="team-name">Albatross Club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      ...
+    </div>
+  </section>
+  <section class="hidedu">
+    <div class="sub-menu-game m-5" id="sub-menu-game">
+      <div class="row">
+        <div class="col">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link game-genre active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              <div class="game-body">
+                <img src="img/esport/allgame_icon_active.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_lol_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_dota2_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_csgo_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_kog_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_ow_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_hs_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_aovtw_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_rb6_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_cf_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_sc2_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_rl_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_fifa_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_war3_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_nba2k_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+            <a class="nav-link game-genre" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <div class="game-body">
+                <img src="img/esport/leftbar_pubg_cn.png" class="game-title-menu s" />
+                <span class="game-title-menu s pl-3">All matches </span>
+                <span class="game-title-menu">276</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12"></div>
+  </section>
+  <section class="rule-game p-0" style="display: none;">
+    <img src="img/esport/close.png" alt="" class="img-fluid float-right p-4" onclick="show()" style="cursor:pointer;" />
+    <div class="con-game-rules pt-5">
+      <div class="rules-main-title">
+        <h2>Gaming Rules</h2>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>General rules</h3>
+        </div>
+        <div class="rules-detail">
+          <p>
+            The following general rules apply to all events and markets /
+            betting types and must be followed in full during betting. Where
+            applicable, the rules and definitions set out in the “Terms and
+            Conditions” published on the website shall apply to these “Rules
+            and Regulations”.
+          </p>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>General rules</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              All betting information provided by the company is provided in
+              good faith. However, the company is not responsible for any
+              errors or omissions regarding date, time, place, competitors,
+              odds, results, statistics, team uniforms (shown in live video)
+              or other betting information. The company reserves the right to
+              correct any obvious errors and should take all reasonable
+              actions to ensure that the markets are managed in an honest and
+              transparent manner, defined as the different types of bets
+              offered for a sporting event. The company reserves the right to
+              make a final decision.
+            </li>
+            <br />
+            <li>
+              If an event starts before the scheduled time, only bets made
+              before the start of the event (except for designated live
+              betting) will be considered valid bets. An event is defined as
+              an organized sport between two teams or individuals Competition
+              or event. If a market is not closed or suspended at the correct
+              time, the company reserves the right to cancel all bets placed
+              after the actual start time (except for designated live
+              betting).
+            </li>
+            <br />
+            <li>
+              If there is any discrepancy between the English and non-English
+              names used on the website, the English version shall prevail.
+            </li>
+            <br />
+            <li>
+              At all times, it is the client's responsibility to know the
+              match score and all relevant match information, and it is
+              recommended that the client confirm the match status before
+              placing a bet.
+            </li>
+            <br />
+            <li>
+              The company reserves the right to modify these rules at any time
+              for any reason. Once posted on the website, any such
+              modifications are binding and effective immediately.
+            </li>
+            <br />
+            <li>
+              The Client acknowledges that although the current scores,
+              elapsed time, and other data provided on the Website are
+              provided by third parties in the form of "live", there may still
+              be time delays and / or may be inaccurate, and when making any
+              bets based on this information, The customer assumes all risks
+              at his own risk. The company does not guarantee the accuracy,
+              completeness or timeliness of the data provided, and shall not
+              be responsible for any loss (direct or indirect loss) suffered
+              by the customer as a result of relying on the data.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Tournament suspension and postponement</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              If an event does not start on the scheduled start date and is
+              not completed on the originally scheduled completion date as
+              specified in the specific sports rules, all bets will be void,
+              except for bets on unconditionally determined markets other
+              than.
+            </li>
+            <br />
+            <li>
+              If an event has already begun, but then suspended, and not
+              completed on the originally scheduled completion date as
+              specified in the specific sports rules, all bets will be void,
+              except for bets placed on markets where the outcome is
+              determined unconditionally other than.
+            </li>
+            <br />
+            <li>
+              If an event is not completed on the scheduled completion date of
+              the plaintiff, and the official result of the event is
+              announced, or the relevant authority of a specific event has
+              announced a result, the company has the right to determine that
+              the event is Formally effective. In this respect, the company's
+              decision is final and conclusive.
+            </li>
+            <br />
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Match Results</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              If necessary, the prize ceremony will be considered as the
+              official result, regardless of whether the result is cancelled
+              or changed in the future. If there is no award ceremony, the
+              result will be based on the official result provided by the
+              relevant authority at the time of market settlement, regardless
+              of whether the result is cancelled or changed in the future. If
+              no official official results are provided, the result will be
+              determined based on applicable and known evidence at the time of
+              market settlement.
+            </li>
+            <br />
+            <li>
+              Handicap is usually settled shortly after the end of an event.
+              For the sole purpose of serving customers, some markets may be
+              settled before the official results are announced. If the
+              settlement of a market is wrong, the company has the right to
+              cancel the settlement.
+            </li>
+            <br />
+            <li>
+              If there is any uncertainty about the results, the company
+              reserves the right to suspend the settlement of any market
+              indefinitely.
+            </li>
+            <br />
+            <li>
+              For bets that have been settled, the company will not recognize
+              any amendments or changes to the results after 72 hours from the
+              start of the event.
+            </li>
+            <br />
+            <li>
+              When there is a conflict between the official results and the
+              results announced on the results section of the company's
+              website, the correct result should be determined by referring to
+              the company's relevant video record of the game in order to
+              resolve the conflict. However, if there is no such applicable
+              video record, the correct result should be determined based on
+              the results published on the official website of the relevant
+              competent authority of the particular event. If the official
+              website cannot provide this result or the results published on
+              the official website are obviously wrong, the company reserves
+              the right to make a decision / amendment in order to determine
+              the final result. In this respect, the company's decision is
+              final and conclusive.
+            </li>
+            <br />
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Contest cancellation policy</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              The start date and time of the e-sports events on our website
+              are for reference only and are not guaranteed to be accurate. If
+              a match is suspended or postponed and it is not restarted within
+              a certain period of time after the actual start time (the time
+              limit is 12 hours for offline matches and 8 hours for online
+              matches), the bet on the match is invalid and Refunded. The
+              exception is that regardless of whether the match is suspended
+              or postponed, a bet on a certain team / player tournament
+              promotion or victory is always valid.
+            </li>
+            <br />
+            <li>
+              If the player / team name is misspelled, all bet amounts will
+              remain valid unless they are clearly the wrong target. If a
+              player competes in the wrong name or low-level account in an
+              official match, the result is still valid. If there is a
+              contestant who is not the official player (or one of them) and
+              has not announced the changes of the contestants before the
+              announcement of the schedule, the company reserves the right to
+              cancel the bet for that field and refund it.
+            </li>
+            <br />
+            <li>
+              All bets will be settled according to the official results
+              announced by the relevant competition management unit. If you do
+              not have a tie-in option, the extension will take effect (if
+              any).
+            </li>
+            <br />
+            <li>
+              When a handicap with only the winning option is faced with a
+              final match result (if there is an overtime, the last overtime
+              result is considered the final game result), all bets on that
+              handicap are invalid and refunded .
+            </li>
+            <br />
+            <li>
+              The company reserves the right of final explanation of the
+              cancellation of the game, the market and the bet, and the refund
+              policy.
+            </li>
+            <br />
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Handicap bets</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              The handicap of an e-sports match can be round / set or other
+              measurement methods selected according to different matches.
+              Spread only refers to "Handicap" on this website.
+            </li>
+            <br />
+            <li>
+              The purpose of handicap is to make the two sides of the sporting
+              event more equal and make gaming more fun. In e-sports game
+              betting, the specific method is to send a certain leading score
+              / winning to the weaker side.
+              <br />
+              <table class="table table-dark table-bordered text-center mt-3" style="background:#111111 !important; border:0px solid !important;">
+                <thead>
+                  <tr>
+                    <td colspan="3">E.g:</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col">Handicap</th>
+                    <th scope="col">Odds</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Player A</td>
+                    <td>-1.5</td>
+                    <td>2.00</td>
+                  </tr>
+                  <tr>
+                    <td>Player B</td>
+                    <td>+1.5</td>
+                    <td>1.85</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <br />
+            <li>
+              If Player A wins two or more maps, the player betting on Player
+              A wins and the player betting on Player B loses. If Player A
+              wins only one more map or Player B wins, the player betting on
+              Player B wins and the player betting on Player A loses.
+            </li>
+            <br />
+            <li>
+              Total score betting: The total score of an e-sports match can be
+              round / round or other score based betting based on the match.
+              The total score refers only to the total score.
+              <table class="table table-dark table-bordered text-center" style="background:#111111 !important; border:0px solid !important;">
+                <thead>
+                  <tr>
+                    <td colspan="3">Three best SC2 match examples</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Above</td>
+                    <td>2.5</td>
+                    <td>1.93</td>
+                  </tr>
+                  <tr>
+                    <td>Below</td>
+                    <td>2.5</td>
+                    <td>1.93</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <br />
+            <li>
+              If the player wins 2-0, all bets below 2.5 win, and those who
+              win over lose lose. If the player wins 2-1, all higher bets win,
+              and lower bets lose.
+            </li>
+            <br />
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Over / Under Betting:</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              Over / Under means predicting that the total number of specific
+              events in the game will be greater or less than the specified
+              value to determine the winner.
+            </li>
+            <br />
+            <li>
+              Minutes: The total score (in minutes) provided over the map's
+              match time. If the map match time is shorter than the total
+              score provided, then bets on "small" will win and bets on "big"
+              will be lost. If the map is played longer than the total score
+              provided, bets on the "big market" will win and bets on the
+              "small market" will be lost. If the number of minutes in the map
+              match time is the same as the total score provided, bets on the
+              "big" will win and bets on the "small" will be lost.
+            </li>
+            <br />
+            <li>
+              Example: Dota2 offers 36 points on a special bet on minutes.
+              <p class="pl-5 pt-3">
+                If the map ends at 36:02 then bets on the "big market" will
+                win and bets on the "small market" will be lost.
+              </p>
+              <p class="pl-5">
+                If the map ends at 35:45 then bets on the "small cap" will win
+                and bets on the "big cap" will be lost.
+              </p>
+              <p class="pl-5">
+                If the map ends exactly at 36:00, bets on the "big market"
+                will win and bets on the "small market" will be lost.
+              </p>
+            </li>
+            <br />
+            <li>
+              In the match between Dota2 and League of Legends, prizes will be
+              paid according to the results displayed in the post-match
+              statistics panel (below).
+              <p>Legend of League of Legends:</p>
+              <img src="img/esport/streamer_img_rules1.png" alt="" class="img-fluid" />
+              <p>
+                Results of the League of Legends game: The total duration of
+                the game is 32 minutes and 00 seconds, and the total kill is
+                16 + 5 = 21.
+              </p>
+              <p>
+                Note: The statistics panel after League of Legends League is
+                slightly different.
+              </p>
+            </li>
+            <br />
+            <li>
+              DOTA2 legend:<br />
+              <img src="img/esport/streamer_img_rules2.png" alt="" class="img-fluid" /><br />
+              <p>
+                DOTA2 match result: The total length of the match is 42
+                minutes and 36 seconds, and the total kill is 22 + 29 = 51.
+              </p>
+            </li>
+            <br />
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Clearance betting</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              Pass betting (also known as tandem betting) is an independent
+              bet consisting of two or more betting items. Players must win
+              all betting items to get payouts and get a higher return than
+              betting separately.
+            </li>
+            <li>
+              example:
+              <p class="pl-4">Tandem betting</p>
+              <p class="pl-5">
+                TSM vs CLG <span class="pl-5">CLG wins first game</span>
+              </p>
+              <p class="pl-5">
+                SKT vs SSG <span class="pl-5">first game SKT first kill</span>
+              </p>
+              <p class="pl-4">
+                Both items must be guessed in order to receive payouts, and
+                there will be no payouts if either item is missed
+              </p>
+            </li>
+            <li>
+              Although in the "Mixed Pass" bet slip, the selected event is
+              considered invalid, the bet slip is still valid and the odds are
+              calculated based on (1).
+            </li>
+            <br />
+            <li>
+              The maximum number of matches that can be cascaded in a pass bet
+              is 10 games. After a bet is cascaded in 10 games, no more games
+              can be cascaded.
+            </li>
+            <br />
+            <li>
+              The maximum total odds for pass betting is 1000 to 1 (Euro
+              odds). When the pass odds reach 1 to 1000, adding more matches
+              to enter the pass will make it impossible to place bets.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Clearance betting</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              In regular time correct score betting in CS: GO, the score
+              options (eg 16: 8, 16: 9, etc.) only represent the final score
+              in regular time. Overtime scores will not affect the result of
+              the handicap If the match is overtime, the regular time score is
+              15:15.
+            </li>
+            <li>
+              example:
+              <p class="pl-4">Tandem betting</p>
+              <p class="pl-5">
+                TSM vs CLG <span class="pl-5">CLG wins first game</span>
+              </p>
+              <p class="pl-5">
+                SKT vs SSG <span class="pl-5">first game SKT first kill</span>
+              </p>
+              <p class="pl-4">
+                Both items must be guessed in order to receive payouts, and
+                there will be no payouts if either item is missed
+              </p>
+            </li>
+            <li>
+              Although in the "Mixed Pass" bet slip, the selected event is
+              considered invalid, the bet slip is still valid and the odds are
+              calculated based on (1).
+            </li>
+            <br />
+            <li>
+              The maximum number of matches that can be cascaded in a pass bet
+              is 10 games. After a bet is cascaded in 10 games, no more games
+              can be cascaded.
+            </li>
+            <br />
+            <li>
+              The maximum total odds for pass betting is 1000 to 1 (Euro
+              odds). When the pass odds reach 1 to 1000, adding more matches
+              to enter the pass will make it impossible to place bets.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Correct score betting</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              In regular time correct score betting in CS: GO, the score
+              options (eg 16: 8, 16: 9, etc.) only represent the final score
+              in regular time. Overtime scores will not affect the result of
+              the handicap If the match is overtime, the regular time score is
+              15:15.
+            </li>
+            <li>
+              The regular time correct score does not distinguish which side
+              of the two teams wins:
+              <p class="pl-4">
+                Example 1: Navi wins 14 games in regular time, NIP wins 16
+                games, the correct score is 16:14
+              </p>
+              <p class="pl-4">
+                Example 2: Navi wins 16 games in regular time, NIP wins 14
+                games, the correct score is also 16:14
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>project</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              First Tower: The team whose first defense tower was destroyed
+              lost this bet.<br />
+              <img src="img/esport/First-Tower.jpg" alt="" class="img-fluid" />
+            </li>
+            <li>
+              First Kill: The team that announced "First Blood" in the game
+              wins this bet.<br />
+              <img src="img/esport/First-Blood.jpg" alt="" class="img-fluid" />
+            </li>
+            <li>
+              First Little Dragon: The team that killed Xiaolong first in the
+              game wins this bet.<br />
+              <img src="img/esport/First-Dragon.jpg" alt="" class="img-fluid" />
+            </li>
+            <li>
+              First Roshan: The team that first killed Roshan in the game won
+              this bet<br />
+              <img src="img/esport/First-Roshan.jpg" alt="" class="img-fluid" />
+            </li>
+            <br />
+            <li>
+              First game: The first game in the series to determine the
+              winner.
+            </li>
+            <li>
+              Series: A series of matches is determined by the (round / match)
+              combination. Usually a three-game two-win system (BO3) or a
+              five-game three-win system (BO5).
+            </li>
+            <li>
+              Game combination bets: A single bet contains two or more bet
+              types.
+              <p>E.g:</p>
+              <p>First kill + first tower:</p>
+              <p>First kill: Team A wins</p>
+              <p>Head Tower: Team B wins</p>
+              <p>The result is 0-0</p>
+              <p>
+                In this case, if betting on one of the teams (A and B) the
+                bettor loses
+              </p>
+              <p>Only one team (A or B) wins both bet types as win.</p>
+              <p>E.g:</p>
+              <p>First kill: Team A wins</p>
+              <p>Head Tower: Team A wins</p>
+              <p>
+                The result is that team A wins, and the player bets to win
+              </p>
+            </li>
+            <li>
+              BO3: Three-game two-win system. If one team wins two games in a
+              row, the third game need not be played.
+            </li>
+            <li>
+              BO5: Five-game three-win system. If one team wins three games in
+              a row, the fourth and fifth games need not be played.
+              <p>Team A wins in the first game</p>
+              <p>Team B wins in the second game</p>
+              <p>Team A wins in the third game</p>
+              <p>Team A wins in the fourth game</p>
+              <p>
+                In this case, there is no need to play in the fifth game
+                because Team A wins the series.
+              </p>
+            </li>
+            <li>
+              In Dota 2 and League of Legends, any killing player in the game
+              will be ranked in the standings. If a 5 to 5 match starts with
+              less than 10 players, or a 6 to 6 match starts with less than 12
+              players, all bets on maps and series will be cancelled.
+            </li>
+            <li>
+              In Dota2 and League of Legends games, if a player disconnects
+              during the game and cannot reconnect, or is replaced during the
+              remaining game, all bets on maps and series will be cancelled.
+            </li>
+            <li>
+              In a CSGO match, if fewer than 10 players have played at least 5
+              rounds, all bets on maps and series will be cancelled.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="rules-main-title">
+        <h2>Anchor match</h2>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Normal condition</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              Anchor matches Anchors directly match matches of random
+              passersby through the official game client of the corresponding
+              game.
+            </li>
+            <li>
+              The rules and terms of the anchor game apply to the anchor game.
+              In case of conflict with the general rules, the rules of the
+              anchor game shall prevail.
+            </li>
+            <li>
+              The terms of the anchor event apply to all anchor events and not
+              to any ordinary event. When the general rules of the anchor
+              event conflict with the rules of the host game ’s special games
+              (such as League of Legends, Jedi Survival, CS: GO, etc.), the
+              corresponding special game The rules of the anchor event shall
+              prevail.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Validity of the match</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              If the anchor does not enter the official gameplay screen of the
+              corresponding game (except for pre-match preparations) and then
+              exits the game, or other players in the same game quit the game,
+              the game will not be counted as a valid game. Will be postponed
+              to the next valid match.
+            </li>
+            <li>
+              If the anchor does not play a game of the corresponding game and
+              plays a game of another game, it will not be counted as a valid
+              game and the corresponding game sequence will be postponed to
+              the next valid game.
+            </li>
+            <li>
+              Within four minutes of the League of Legends anchor game, if one
+              of the players is offline and completes within the specified
+              time and votes are remade, the match will not be counted as a
+              valid match, and the corresponding match order will be Postponed
+              to the next valid match. League of Legends Reopening Example 1:
+              As shown in the figure below, the system determines that the
+              game is a reopening. According to the validity rules of the
+              anchor game, the game will be considered invalid and the
+              corresponding game sequence will be postponed to the next valid
+              game.
+              <img src="img/esport/tnc-img1.jpg" alt="" class="img-fluid" /><br /><br />
+              League of Legends Reopening Example 2: As shown in the figure
+              below, the system determines that the game is Remake, and
+              according to the validity rules of the anchor event, the game
+              will be considered invalid and the corresponding game sequence
+              will be postponed to the next valid game. .
+              <br /><br />
+              <img src="img/esport/tnc-img2.jpg" alt="" class="img-fluid" /><br />
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Termination and extension of the event</h3>
+        </div>
+        <div class="rules-detail">
+          <ul>
+            <li>
+              If the anchor match does not start at the scheduled time and
+              does not start a subsequent match in the same live broadcast
+              period of the anchor (the termination of the live broadcast for
+              more than half an hour before the start of the broadcast is
+              regarded as a new live broadcast period), all bets on that match
+              will be invalid and full refund.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Match Results</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              The final official results of the anchor event, except for
+              special circumstances, are based on the results displayed by the
+              official client of the game or the query software (when the
+              official results are not available).
+            </li>
+            <li>
+              The special case is that when the anchor is disconnected from
+              the current game / intermediate game and is finally judged as
+              offline by the official client of the corresponding game, the
+              host of the anchor will be regarded as the losing party
+              regardless of the client's display of the result. <br /><br />
+
+              League of Legends Anchor disconnection / departure example 1: As
+              shown in the figure below, the system determines that the player
+              (ie the anchor) in the red box is a deserter (ie, departs).
+              According to the rules of the match result of the anchor event,
+              the anchor will be regarded as the losing .
+              <img src="img/esport/tnc-img3.jpg" alt="" class="img-fluid" /><br /><br />
+              League of Legends Anchor disconnected / Central Example 2: When
+              the picture of the match result cannot be captured directly in
+              the anchor's live broadcast, the result in the record query
+              software will prevail. As shown in the figure below, the system
+              determines that the player (ie the anchor) in the red frame is a
+              deserter (ie, is away), and according to the rules of the match
+              result of the anchor event, the anchor will be regarded as the
+              loser.
+              <br /><br />
+              <img src="img/esport/tnc-img4.jpg" alt="" class="img-fluid" />
+            </li>
+            <li>
+              In the same game, the disconnection or departure of players
+              other than the anchor does not affect the final result of the
+              game. The game results or record query software displayed by the
+              official client of the game (when the official display results
+              are not available) shall prevail.
+            </li>
+            <li>
+              In the game of Genting's Anchor Game, the winning condition of
+              the winning and losing markets is that the final ranking of the
+              anchor of the game is the top 4 (that is, the final rankings of
+              1, 2, 3, and 4 all win for the anchor). With a ranking of
+              5,6,7,8, passersby wins. The results of Genting Games are based
+              on the results displayed on the official client or the query
+              software (when the official results are not available).
+              <br />
+              Figure 1: At the end of the game, the anchor ranked third in the
+              top four range, so the game's winning handicap result was the
+              anchor's win.
+              <img src="img/esport/streamer_img_rules3.png" alt="" class="img-fluid" /><br /><br />
+              Legend 2: At the end of the game, the anchor ranked eighth in
+              the range of the last four, so the game's winning handicap
+              result turned out to be a failure for the anchor. <br /><br />
+              <img src="img/esport/streamer_img_rules4.png" alt="" class="img-fluid" /><br /><br />
+              Figure 3: At the end of the game, the anchor ranked second in
+              the top four range, so the game's winning handicap result was
+              the anchor's win. <br /><br />
+              <img src="img/esport/streamer_img_rules5.png" alt="" class="img-fluid" /><br /><br />
+              Figure 4: At the end of the game, the anchor ranked eighth in
+              the range of the last four, so the game's winning handicap
+              result turned out to be a failure for the anchor.<br /><br />
+              <img src="img/esport/streamer_img_rules6.png" alt="" class="img-fluid" /><br /><br />
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="section-rules">
+        <div class="second-title">
+          <h3>Contest cancellation policy</h3>
+        </div>
+        <div class="rules-detail">
+          <ol>
+            <li>
+              If the anchor changes the game account used during the live
+              broadcast, and the game rank or ranking of the account is
+              significantly different from the original account, we have the
+              right to cancel all bets related to this game and subsequent
+              games (if any). And a full refund.
+            </li>
+            <li>
+              If the anchor changes the ranking method during the live
+              broadcast (such as from single to double, four or five, and vice
+              versa), then we have the right to cancel the game and the
+              subsequent games and make all bets. Single full refund.
+            </li>
+            <li>
+              The company reserves the right of final interpretation of the
+              cancellation / refund policy of the match, handicap and bet on
+              the anchor game.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="announcement-match" style="display: none;">
+    <img src="img/esport/close.png" alt="" class="img-fluid float-right pt-3 pr-3" onclick="show()" style="cursor:pointer;" />
+    <div class="container-fluid pt-5" style="color:white;">
+      <div class="row">
+        <img src="img/esport/anno_icon.png" class="img-fluid pl-2" />
+        <span class="pt-2">date:</span>
+        <input type="date" class="date-input " name="" value="" />
+        <span class="pt-2">to</span>
+        <input type="date" class="date-input " name="" value="" />
+      </div>
+    </div>
+    <div class="container-fluid p-3 pt-4">
+      <div class="row no-gutters body-announcement">
+        <div class="col-4 announcement-logo">
+          <img src="img/esport/annoumt_dota2_active_cn.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-6 announcement-detail">
+          <p class="m-0">
+            Delayed
+            <span>2020-02-20 20:39:34</span>
+          </p>
+        </div>
+        <div class="col-2 " style="background:#191919;">
+          <img src="img/esport/arrow-right-annmt.png" class="img-fluid float-right pt-2 mt-4 px-4" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-3">
+      <div class="row no-gutters body-announcement">
+        <div class="col-4 announcement-logo">
+          <img src="img/esport/annoumt_lol_active_cn.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-6 announcement-detail">
+          <p class="m-0">
+            Delayed
+            <span>2020-02-20 20:39:34</span>
+          </p>
+        </div>
+        <div class="col-2 " style="background:#191919;">
+          <img src="img/esport/arrow-right-annmt.png" class="img-fluid float-right pt-2 mt-4 px-4" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-3">
+      <div class="row no-gutters body-announcement">
+        <div class="col-4 announcement-logo">
+          <img src="img/esport/annoumt_csgo_active_cn.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-6 announcement-detail">
+          <p class="m-0">
+            Delayed
+            <span>2020-02-20 20:39:34</span>
+          </p>
+        </div>
+        <div class="col-2 " style="background:#191919;">
+          <img src="img/esport/arrow-right-annmt.png" class="img-fluid float-right pt-2 mt-4 px-4" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-3">
+      <div class="row no-gutters body-announcement">
+        <div class="col-4 announcement-logo">
+          <img src="img/esport/annoumt_dota2_active_cn.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-6 announcement-detail">
+          <p class="m-0">
+            Delayed
+            <span>2020-02-20 20:39:34</span>
+          </p>
+        </div>
+        <div class="col-2 " style="background:#191919;">
+          <img src="img/esport/arrow-right-annmt.png" class="img-fluid float-right pt-2 mt-4 px-4" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-3">
+      <div class="row no-gutters body-announcement">
+        <div class="col-4 announcement-logo">
+          <img src="img/esport/annoumt_dota2_active_cn.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-6 announcement-detail">
+          <p class="m-0">
+            Delayed
+            <span>2020-02-20 20:39:34</span>
+          </p>
+        </div>
+        <div class="col-2 " style="background:#191919;">
+          <img src="img/esport/arrow-right-annmt.png" class="img-fluid float-right pt-2 mt-4 px-4" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/component/footer.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var sub = document.getElementById("sub-menu-game");
+    var overlay = document.getElementsByClassName("overlay");
+    var hidedu = document.getElementsByClassName("hidedu");
+    var ruleGame = document.getElementsByClassName("rule-game");
+    var announcementMatch = document.getElementsByClassName(
+      "announcement-match"
+    );
+    var link = document.getElementsByClassName("game-genre");
+
+    function toggleSidebar() {
+      // sub.style.display = "block";
+      sub.classList.add("active");
+      overlay[0].style.display = "block";
+    }
+
+    function off() {
+      // sub.style.display = "none";
+      overlay[0].style.display = "none";
+      sub.classList.remove("active");
+    }
+
+    function hide() {
+      // sub.style.display = "none";
+      hidedu[0].style.display = "none";
+      ruleGame[0].style.display = "block";
+      // sub.classList.remove('active');
+    }
+
+    function show() {
+      // sub.style.display = "none";
+      hidedu[0].style.display = "block";
+      ruleGame[0].style.display = "none";
+      announcementMatch[0].style.display = "none";
+      // sub.classList.remove('active');
+    }
+
+    function showannouncement() {
+      announcementMatch[0].style.display = "block";
+      hidedu[0].style.display = "none";
+      console.log("hee");
+    }
+    $(".game-genre").on("click", function(event) {
+      $("#sub-menu-game.active").removeClass("active");
+      $("#overlay").hide();
+      console.log("hee");
+    });
+    //
+    // function toggleSidebar1() {
+    //   // sub.style.display = "block";
+    //   sub.classList.add('active');
+    //   document.getElementById("overlay1").style.display = "block";
+    // }
+    //
+    // function off1() {
+    //   // sub.style.display = "none";
+    //   document.getElementById("overlay1").style.display = "none";
+    //   sub.classList.remove('active');
+    // }
+  </script>
+
+</body>
+
+</html>

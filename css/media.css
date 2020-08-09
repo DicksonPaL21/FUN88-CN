@@ -1,0 +1,318 @@
+:root {
+  /*=> screen-size > 426px <=*/
+  --lg-fs-1: 12pt;
+  --lg-fs-2: 11pt;
+  --lg-fs-3: 10pt;
+  --lg-fs-4: 9pt;
+  --lg-fs-5: 8pt;
+
+  /*=> screen-size < 425px <=*/
+  --md-fs-1: 11pt;
+  --md-fs-2: 10pt;
+  --md-fs-3: 9pt;
+  --md-fs-4: 8pt;
+  --md-fs-5: 7pt;
+
+  /*=> screen-size < 375px <=*/
+  --sm-fs-1: 10pt;
+  --sm-fs-2: 9pt;
+  --sm-fs-3: 8pt;
+  --sm-fs-4: 7pt;
+  --sm-fs-5: 6pt;
+
+  /*=> screen-size < 320px <=*/
+  --xs-fs-1: 9pt;
+  --xs-fs-2: 8pt;
+  --xs-fs-3: 7pt;
+  --xs-fs-4: 6pt;
+  --xs-fs-5: 5pt;
+}
+
+/****** MEDIA QUERY ******/
+@media screen and (min-width: 426px) {
+
+  /*=> SIDENAV <=*/
+  #sidebar .sidebar-brand label,
+  #sidebar .menu .header span {
+    font-size: var(--lg-fs-1);
+  }
+
+  #sidebar .sidebar-brand ul > li > span {
+    font-size: var(--lg-fs-4);
+  }
+
+  #sidebar .sidebar-text,
+  #sidebar .btn {
+    font-size: var(--lg-fs-1);
+  }
+
+  #sidebar .smenu a {
+    font-size: var(--lg-fs-2);
+  }
+
+  /*=> !SIDENAV <=*/
+
+  /*=> BODY <=*/
+  header .app-name {
+    font-size: 24pt;
+  }
+
+  .f-1 {
+    font-size: var(--lg-fs-1);
+  }
+
+  .f-2 {
+    font-size: var(--lg-fs-2);
+  }
+
+  .f-3 {
+    font-size: var(--lg-fs-3);
+  }
+
+  .f-4 {
+    font-size: var(--lg-fs-4);
+  }
+
+  .f-5 {
+    font-size: var(--lg-fs-5);
+  }
+
+  #list.grid-container > .box [class^='group-'] {
+    top: 6px;
+    left: 6px;
+    width: 25px;
+    height: 25px;
+  }
+
+  #login .form-group > input[type='password'] {
+    padding-right: 88px;
+  }
+
+  /*=> !BODY <=*/
+
+  /*=> FOOTER <=*/
+  footer .section a,
+  footer .footer .title {
+    font-size: var(--lg-fs-1);
+  }
+
+  footer .footer .sub-title {
+    font-size: var(--lg-fs-3);
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+  /*=> SIDENAV <=*/
+  #sidebar .sidebar-brand label,
+  #sidebar .menu .header span {
+    font-size: var(--md-fs-1);
+  }
+
+  #sidebar .sidebar-brand ul > li > span {
+    font-size: var(--md-fs-4);
+  }
+
+  #sidebar .sidebar-text,
+  #sidebar .btn {
+    font-size: var(--md-fs-1);
+  }
+
+  #sidebar .smenu a {
+    font-size: var(--md-fs-2);
+  }
+
+  /*=> !SIDENAV <=*/
+
+  /*=> BODY <=*/
+  header .app-name {
+    font-size: 22pt;
+  }
+
+  .f-1 {
+    font-size: var(--md-fs-1);
+  }
+
+  .f-2 {
+    font-size: var(--md-fs-2);
+  }
+
+  .f-3 {
+    font-size: var(--md-fs-3);
+  }
+
+  .f-4 {
+    font-size: var(--md-fs-4);
+  }
+
+  .f-5 {
+    font-size: var(--md-fs-5);
+  }
+
+  #list.grid-container > .box [class^='group-'] {
+    top: 5px;
+    left: 5px;
+    width: 22px;
+    height: 22px;
+  }
+
+  #login .form-group > input[type='password'] {
+    padding-right: 80px;
+  }
+
+  /*=> !BODY <=*/
+
+  /*=> FOOTER <=*/
+  footer .section a,
+  footer .footer .title {
+    font-size: var(--md-fs-1);
+  }
+
+  footer .footer .sub-title {
+    font-size: var(--md-fs-3);
+  }
+}
+
+@media screen and (min-width: 326px) and (max-width: 375px) {
+
+  /*=> SIDENAV <=*/
+  #sidebar .sidebar-brand label,
+  #sidebar .menu .header span {
+    font-size: var(--sm-fs-1);
+  }
+
+  #sidebar .sidebar-brand ul > li > span {
+    font-size: var(--sm-fs-4);
+  }
+
+  #sidebar .sidebar-text,
+  #sidebar .btn {
+    font-size: var(--sm-fs-1);
+  }
+
+  #sidebar .smenu a {
+    font-size: var(--sm-fs-2);
+  }
+
+  /*=> !SIDENAV <=*/
+
+  /*=> BODY <=*/
+  header .app-name {
+    font-size: 20pt;
+  }
+
+  .f-1 {
+    font-size: var(--sm-fs-1);
+  }
+
+  .f-2 {
+    font-size: var(--sm-fs-2);
+  }
+
+  .f-3 {
+    font-size: var(--sm-fs-3);
+  }
+
+  .f-4 {
+    font-size: var(--sm-fs-4);
+  }
+
+  .f-5 {
+    font-size: var(--sm-fs-5);
+  }
+
+  #list.grid-container > .box [class^='group-'] {
+    top: 4px;
+    left: 4px;
+    width: 19px;
+    height: 19px;
+  }
+
+  #login .form-group > input[type='password'] {
+    padding-right: 67px;
+  }
+
+  /*=> !BODY <=*/
+
+  /*=> FOOTER <=*/
+  footer .section a,
+  footer .footer .title {
+    font-size: var(--sm-fs-1);
+  }
+
+  footer .footer .sub-title {
+    font-size: var(--sm-fs-3);
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  /*=> SIDENAV <=*/
+  #sidebar .sidebar-brand label,
+  #sidebar .menu .header span {
+    font-size: var(--xs-fs-1);
+  }
+
+  #sidebar .sidebar-brand ul > li > span {
+    font-size: var(--xs-fs-4);
+  }
+
+  #sidebar .sidebar-text,
+  #sidebar .btn {
+    font-size: var(--xs-fs-1);
+  }
+
+  #sidebar .smenu a {
+    font-size: var(--xs-fs-2);
+  }
+
+  /*=> !SIDENAV <=*/
+
+  /*=> BODY <=*/
+  header .app-name {
+    font-size: 18pt;
+  }
+
+  .f-1 {
+    font-size: var(--xs-fs-1);
+  }
+
+  .f-2 {
+    font-size: var(--xs-fs-2);
+  }
+
+  .f-3 {
+    font-size: var(--xs-fs-3);
+  }
+
+  .f-4 {
+    font-size: var(--xs-fs-4);
+  }
+
+  .f-5 {
+    font-size: var(--xs-fs-5);
+  }
+
+  #list.grid-container > .box [class^='group-'] {
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+  }
+
+  #login .form-group > input[type='password'] {
+    padding-right: 56px;
+  }
+
+  /*=> !BODY <=*/
+
+  /*=> FOOTER <=*/
+  footer .section a,
+  footer .footer .title {
+    font-size: var(--xs-fs-1);
+  }
+
+  footer .footer .sub-title {
+    font-size: var(--xs-fs-3);
+  }
+}

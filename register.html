@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <meta name="theme-color" content="#25AAE1" />
+
+  <link rel="icon" type="image/png" href="img/icon/logo.png" />
+
+  <title>FUN88官方网站</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript" src="js/config.js"></script>
+</head>
+
+<body>
+  <section id="register" class="pt-0">
+    <div class="container mt-3">
+      <div class="col-12">
+        <span class="row menu-back">
+          <i class="back"></i>
+          <small class="text">Back</small>
+        </span>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="content">
+        <img class="full-width mb-3" src="img/no-image-available.png" alt="">
+        <form class="col-12" method="POST">
+          <div class="form-group">
+            <div class="inline-flex">
+              <label for="user" class="mb-0 f-2">
+                <i class="fas fa-user-alt"></i>
+              </label>
+              <input type="text" id="user" class="form-control no-shadow pl-3 f-2" placeholder="Name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="inline-flex">
+              <label for="email" class="mb-0 f-2">
+                <i class="fas fa-envelope"></i>
+              </label>
+              <input type="email" id="email" class="form-control no-shadow pl-3 f-2" placeholder="email@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="inline-flex">
+              <label for="pass" class="mb-0 f-2">
+                <i class="fas fa-key"></i>
+              </label>
+              <input type="password" id="pass" class="form-control no-shadow pl-3 pr-4 f-2" placeholder="Password" data-toggle="popover" data-placement="top" data-trigger="focus" title="Password must include" required>
+              <div id="password-strength-meter">
+                <span class="box-3"></span>
+                <span class="box-2"></span>
+                <span class="box-1"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="inline-flex">
+              <label for="re-pass" class="mb-0 f-2">
+                <i class="fas fa-key"></i>
+              </label>
+              <input type="password" id="re-pass" class="form-control no-shadow pl-3 pr-4 f-2" placeholder="Repeat password" required>
+              <div id="confirm-password" class="mb-0"></div>
+            </div>
+          </div>
+          <div class="form-group form-check f-5">
+            <div class="inline-flex">
+              <input type="checkbox" class="form-check-input" id="check">
+              <label class="form-check-label p-0 m-0" for="check">
+                I agree all statements in&nbsp;<a href="#" class="term-service">Terms of service</a>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-danger col f-1">REGISTER</button>
+          <div class="form-group">
+            <small id="signin" class="form-text mt-2 f-5">
+              Already have an account?&nbsp;<a href="login.html" class="bold">SIGN IN</a>
+            </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    var password = ''
+    var rePassword = ''
+    var _password = []
+
+    $('#pass').on('inserted.bs.popover', function() {
+      $('.popover > .popover-body').html(`
+        <span class="verif-1">
+          <i class="fas fa-times"></i>
+          <p class="m-0">8-32 Characters</p>
+        </span>
+        <span class="verif-2">
+          <i class="fas fa-times"></i>
+          <p class="m-0">At least one <b>lowercase</b> letter</p>
+        </span>
+        <span class="verif-3">
+          <i class="fas fa-times"></i>
+          <p class="m-0">At least one <b>uppercase</b> letter</p>
+        </span>
+        <span class="verif-4">
+          <i class="fas fa-times"></i>
+          <p class="m-0">At least one <b>number</b></p>
+        </span>
+        <span class="verif-5">
+          <i class="fas fa-check"></i>
+          <p class="m-0">No <b>spaces</b> or <b>special</b> characters</p>
+        </span>
+      `)
+    })
+
+    $('#pass').on('keyup', (e) => {
+      password = $(`#${e.currentTarget.id}`).val()
+      var keyLen = password.length
+
+      if (keyLen >= 8)
+        $('.verif-1 > i').attr('class', 'fas fa-check')
+      else $('.verif-1 > i').attr('class', 'fas fa-times')
+
+      if (/[a-z]/g.test(password))
+        $('.verif-2 > i').attr('class', 'fas fa-check')
+      else $('.verif-2 > i').attr('class', 'fas fa-times')
+
+      if (/[A-Z]/g.test(password))
+        $('.verif-3 > i').attr('class', 'fas fa-check')
+      else $('.verif-3 > i').attr('class', 'fas fa-times')
+
+      if (/[0-9]/g.test(password))
+        $('.verif-4 > i').attr('class', 'fas fa-check')
+      else $('.verif-4 > i').attr('class', 'fas fa-times')
+
+      if (/[!@#$%^&*(),.?":{}|<>\s]/g.test(password))
+        $('.verif-5 > i').attr('class', 'fas fa-times')
+      else $('.verif-5 > i').attr('class', 'fas fa-check')
+
+      if (keyLen > 0)
+        $('#password-strength-meter > .box-1').addClass('active')
+      else
+        $('#password-strength-meter > .box-1').removeClass('active')
+
+      if (keyLen > 7)
+        $('#password-strength-meter > .box-2').addClass('active')
+      else
+        $('#password-strength-meter > .box-2').removeClass('active')
+
+      if (keyLen > 14)
+        $('#password--strength-meter > .box-3').addClass('active')
+      else
+        $('#password-strength-meter > .box-3').removeClass('active')
+    })
+
+    $('#re-pass').on('keyup', (e) => {
+      rePassword = $(`#${e.currentTarget.id}`).val()
+      var keyLen = rePassword.length
+
+      if (keyLen > 0) {
+        $('#confirm-password').css({
+          display: 'block'
+        })
+
+        if (rePassword === password)
+          $('#confirm-password').html('<i class="far fa-check-circle"></i>')
+        else
+          $('#confirm-password').html('<i class="far fa-times-circle"></i>')
+
+      } else {
+        $('#confirm-password').css({
+          display: 'none'
+        })
+      }
+
+    })
+
+    $(document).ready(() => {
+      $('[data-toggle="popover"]').popover()
+
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    })
+  </script>
+
+  <script src="js/functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
